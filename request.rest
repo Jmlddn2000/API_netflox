@@ -1,0 +1,110 @@
+# kategori
+
+GET http://localhost:3000/kategori
+
+###
+GET http://localhost:3000/kategori/637222de356396bb553b67ef
+
+
+###
+POST http://localhost:3000/kategori
+Content-Type: application/json
+
+{
+    "id" : 5,
+    "nama_kategori" : "Triller"
+}
+
+###
+PATCH http://localhost:3000/kategori/637222de356396bb553b67ef
+Content-Type: application/json
+
+{
+    "id" : 2,
+    "nama_kategori" : "jamal"
+}
+
+###
+DELETE  http://localhost:3000/kategori/637227d21bfa13bace2d0188
+
+
+
+# Film Artis
+
+# get film Artis
+###
+GET http://localhost:3000/filmArtis
+
+###
+POST http://localhost:3000/filmArtis
+Content-Type: application/json
+
+{
+    "id_film_artis" : 2,
+    "id_film" : 1,
+    "id_artis" : 1
+}
+
+# get By ID Film Artis
+###
+GET http://localhost:3000/filmArtis/63723238356396bb553b6807
+
+###
+DELETE  http://localhost:3000/filmArtis/63723deacfcff8b3b22d4df3
+
+
+# Artis
+###
+
+GET http://localhost:3000/Artis
+
+###
+
+POST http://localhost:3000/Artis
+Content-Type: application/json
+
+{
+    "id_artis" : 1,
+    "nama_lengkap" : "dilf",
+    "gambar" : "hgahwuhduwhdwkjankw"
+}
+
+###
+
+GET http://localhost:3000/Artis/6374cc9dba27e748fa950651
+
+###
+
+DELETE  http://localhost:3000/Artis/63720382356396bb553b67d6
+
+
+# Film
+###
+
+GET http://localhost:3000/Film
+
+###
+
+POST http://localhost:3000/Film
+Content-Type: application/json
+
+{
+    "id_film" : 3,
+    "id_kategori" : 2,
+    "title" : "mantap",
+    "durasi" : "1jam",
+    "umur" : 10,
+    "tahun_terbit" : 2022,
+    "overview" : "mantap",
+    "descripsi" : "mantap",
+    "garis_cerita" : "mantap",
+    "gambar" : "mantap"
+}
+
+###
+
+GET http://localhost:3000/Film/6374f4d3d31567058c3b796e
+
+###
+
+DELETE  http://localhost:3000/Film/6374f9091ff564e9b4d4ec92

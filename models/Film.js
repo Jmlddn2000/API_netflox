@@ -1,11 +1,13 @@
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 
 const Film = mongoose.Schema({
     id_film : {
         type : Number,
     },
     id_kategori : {
-        type : Number,
+        type : mongoose.Schema.Types.ObjectId,
+        ref : "kategoris",
+        require: true
     },
     title : {
         type : String,
@@ -15,6 +17,9 @@ const Film = mongoose.Schema({
     },
     umur : {
         type : Number,
+    },
+    rating : {
+        type : String,
     },
     tahun_terbit : {
         type : Number,

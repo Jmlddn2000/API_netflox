@@ -11,8 +11,8 @@ POST http://localhost:3000/kategori
 Content-Type: application/json
 
 {
-    "id" : 5,
-    "nama_kategori" : "Triller"
+    "id" : 3,
+    "nama_kategori" : "Fantasi"
 }
 
 ###
@@ -25,7 +25,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:3000/kategori/637227d21bfa13bace2d0188
+DELETE  http://localhost:3000/kategori/6378996e50523fe95a244071
 
 
 
@@ -89,22 +89,23 @@ POST http://localhost:3000/Film
 Content-Type: application/json
 
 {
-    "id_film" : 3,
-    "id_kategori" : 2,
-    "title" : "mantap",
-    "durasi" : "1jam",
+    "id_film" : 6,
+    "id_kategori" : "6381c563d0893a41a7f6751f",
+    "title" : "mabok cinta",
+    "durasi" : "123 min",
     "umur" : 10,
-    "tahun_terbit" : 2022,
-    "overview" : "mantap",
-    "descripsi" : "mantap",
-    "garis_cerita" : "mantap",
-    "gambar" : "mantap"
+    "rating" : "8.0",
+    "tahun_terbit" : 2004,
+    "overview" : "mantap mantap mantap",
+    "descripsi" : "mantap mantap mantap",
+    "garis_cerita" : "mantap mantap mantap",
+    "gambar" : "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
 }
 
 ###
 
-GET http://localhost:3000/Film/6374f4d3d31567058c3b796e
+GET http://localhost:3000/Film/6378998e50523fe95a244078
 
 ###
 
-DELETE  http://localhost:3000/Film/6374f9091ff564e9b4d4ec92
+DELETE  http://localhost:3000/Film/6381ce78d0893a41a7f67533

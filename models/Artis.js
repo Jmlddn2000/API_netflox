@@ -8,7 +8,7 @@ const Artis = mongoose.Schema({
         type : String,
     },
     gambar : {
-        type : String,
+        type : Array,
     }
 
 })

@@ -21,6 +21,9 @@ const Film = mongoose.Schema({
     rating : {
         type : String,
     },
+    gendre : {
+        type : String,
+    },
     tahun_terbit : {
         type : Number,
     },

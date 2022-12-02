@@ -1,0 +1,23 @@
+# Artis
+###
+
+GET http://localhost:3000/Artis
+
+###
+
+POST http://localhost:3000/Artis
+Content-Type: application/json
+
+{
+    "id_artis" : 1,
+    "nama_lengkap" : "dilf",
+    "gambar" : "hgahwuhduwhdwkjankw"
+}
+
+###
+
+GET http://localhost:3000/Artis/6378998a50523fe95a244076
+
+###
+
+DELETE  http://localhost:3000/Artis/63720382356396bb553b67d6

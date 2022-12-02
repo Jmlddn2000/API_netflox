@@ -24,17 +24,19 @@ export const getByIDfilm = async (req, res) => {
     
 }
 
-// fet film by Id_kategori
+// get Top film
 
-// export const getByIDKategori = async (req, res) => {
-//     try{
-//         const filmid = await Film.findById(req.params.id_film)
-//         res.json(filmid)
-//     }catch (error) {
-//         res.json({messagee: error.messagee})
-//     }
+export const getTopFilm = async (req, res) => {
+    try{
+        const filmtop = await Film.find()
+        .sort({rating : -1})
+        .populate("id_kategori", "nama_kategori")
+        res.json(filmtop)
+    }catch (error) {
+        res.json({messagee: error.messagee})
+    }
     
-// }
+}
 
 // tambah Film
 export const addFilm = async (req, res) => {

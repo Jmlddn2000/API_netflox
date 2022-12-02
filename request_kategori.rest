@@ -1,0 +1,28 @@
+# kategori
+
+GET http://localhost:3000/kategori
+
+###
+GET http://localhost:3000/kategori/6381c563d0893a41a7f6751f
+
+
+###
+POST http://localhost:3000/kategori
+Content-Type: application/json
+
+{
+    "id" : 3,
+    "nama_kategori" : "Fantasi"
+}
+
+###
+PATCH http://localhost:3000/kategori/637222de356396bb553b67ef
+Content-Type: application/json
+
+{
+    "id" : 2,
+    "nama_kategori" : "jamal"
+}
+
+###
+DELETE  http://localhost:3000/kategori/6378996e50523fe95a244071

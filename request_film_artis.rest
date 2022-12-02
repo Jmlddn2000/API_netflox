@@ -1,0 +1,22 @@
+# Film Artis
+
+# get film Artis
+###
+GET http://localhost:3000/filmArtis
+
+###
+POST http://localhost:3000/filmArtis
+Content-Type: application/json
+
+{
+    "id_film_artis" : 1,
+    "id_film" : "6381c59dd0893a41a7f67526",
+    "id_artis" : "6378998a50523fe95a244076"
+}
+
+# get By ID Film Artis
+###
+GET http://localhost:3000/filmArtis/6378998650523fe95a244074
+
+###
+DELETE  http://localhost:3000/filmArtis/6389a19fb70cbb730e92ce28

@@ -22,6 +22,7 @@ import {
 
 import {
     getFilm, 
+    getTopFilm,
     addFilm, 
     getByIDfilm,
     deletFilm, 
@@ -53,6 +54,8 @@ router.get('/Film', getFilm)
 router.post('/Film', addFilm)
 router.get('/Film/:id_film', getByIDfilm)
 router.delete('/Film/:id_film', deletFilm)
+router.get('/FilmTopfilm', getTopFilm)
+
 
 
 export default router

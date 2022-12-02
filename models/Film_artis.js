@@ -5,10 +5,14 @@ const Film_artis = mongoose.Schema({
         type : Number,
     },
     id_film : {
-        type : Number,
+        type : mongoose.Schema.Types.ObjectId,
+        ref : "films",
+        require: true
     },
     id_artis : {
-        type : Number,
+        type : mongoose.Schema.Types.ObjectId,
+        ref : "artis",
+        require: true
     }
     
 })

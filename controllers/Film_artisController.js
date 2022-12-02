@@ -5,6 +5,8 @@ import Film from "../models/Film_artis.js"
 export const getFilmArtis = async (req, res) => {
     try{
         const kategoris = await Film.find()
+        .populate("id_film")
+        .populate("id_artis",  "gambar" )
         res.json(kategoris)
     }catch (error) {
         res.json({messagee: error.messagee})
@@ -25,7 +27,7 @@ export const getByIDfilmArtis = async (req, res) => {
 
 // tambah Film
 export const addFilmArtis = async (req, res) => {
-    const filmArtis = new Film(req.body);
+    const filmArtis = new Film({...req.body, id_artis : req.body.id_artis, id_film : req.body.id_film} );
     try{
         const add_FilmArtis = await filmArtis.save();
         res.json(add_FilmArtis)

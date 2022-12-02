@@ -16,13 +16,25 @@ export const getFilm = async (req, res) => {
 // get pake id
 export const getByIDfilm = async (req, res) => {
     try{
-        const filmid = await Film.findById(req.params.id_film)
-        res.json(filmid)
+        const film = await Film.findById(req.params.id_film)
+        res.json(film)
     }catch (error) {
         res.json({messagee: error.messagee})
     }
     
 }
+
+// fet film by Id_kategori
+
+// export const getByIDKategori = async (req, res) => {
+//     try{
+//         const filmid = await Film.findById(req.params.id_film)
+//         res.json(filmid)
+//     }catch (error) {
+//         res.json({messagee: error.messagee})
+//     }
+    
+// }
 
 // tambah Film
 export const addFilm = async (req, res) => {

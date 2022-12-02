@@ -3,7 +3,7 @@
 GET http://localhost:3000/kategori
 
 ###
-GET http://localhost:3000/kategori/637222de356396bb553b67ef
+GET http://localhost:3000/kategori/6381c563d0893a41a7f6751f
 
 
 ###
@@ -40,17 +40,17 @@ POST http://localhost:3000/filmArtis
 Content-Type: application/json
 
 {
-    "id_film_artis" : 2,
-    "id_film" : 1,
-    "id_artis" : 1
+    "id_film_artis" : 1,
+    "id_film" : "6381c59dd0893a41a7f67526",
+    "id_artis" : "6378998a50523fe95a244076"
 }
 
 # get By ID Film Artis
 ###
-GET http://localhost:3000/filmArtis/63723238356396bb553b6807
+GET http://localhost:3000/filmArtis/6378998650523fe95a244074
 
 ###
-DELETE  http://localhost:3000/filmArtis/63723deacfcff8b3b22d4df3
+DELETE  http://localhost:3000/filmArtis/638999b4d263774d2e497f85
 
 
 # Artis
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/Artis/6374cc9dba27e748fa950651
+GET http://localhost:3000/Artis/6378998a50523fe95a244076
 
 ###
 
@@ -90,8 +90,8 @@ Content-Type: application/json
 
 {
     "id_film" : 6,
-    "id_kategori" : "6381c563d0893a41a7f6751f",
-    "title" : "mabok cinta",
+    "id_kategori" : "6381c56dd0893a41a7f67521",
+    "title" : "bapak kau",
     "durasi" : "123 min",
     "umur" : 10,
     "rating" : "8.0",
@@ -99,13 +99,13 @@ Content-Type: application/json
     "overview" : "mantap mantap mantap",
     "descripsi" : "mantap mantap mantap",
     "garis_cerita" : "mantap mantap mantap",
-    "gambar" : "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+    "gambar" : "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg"
 }
 
 ###
 
-GET http://localhost:3000/Film/6378998e50523fe95a244078
+GET http://localhost:3000/Film/6381c59dd0893a41a7f67526
 
 ###
 
-DELETE  http://localhost:3000/Film/6381ce78d0893a41a7f67533
+DELETE  http://localhost:3000/Film/6389998dd263774d2e497f7f

@@ -29,6 +29,7 @@ export const getByIDfilm = async (req, res) => {
 export const getTopFilm = async (req, res) => {
     try{
         const filmtop = await Film.find()
+        .sort({rating : -1})
         .populate("id_kategori", "nama_kategori")
         res.json(filmtop)
     }catch (error) {

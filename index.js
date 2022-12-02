@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://netflox:netflox@netflox.yzfbo6y.mongodb.net/netf
 app.use(cors())
 
 const db = mongoose.connection;
-const port = process.env.PORT ||3000
+const port = process.env.PORT ||4000
 
 db.on("error", (error) => console.log(error))
 db.once('open', () => console.log('Database Connected'))

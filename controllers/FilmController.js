@@ -13,6 +13,19 @@ export const getFilm = async (req, res) => {
     
 }
 
+// get top film
+export const getFilmTop = async (req, res) => {
+    try{
+        const filmtop = await Film.find()
+        .sort({rating : -1})
+        .populate("id_kategori", "nama_kategori")
+        res.json(filmtop)
+    }catch (error) {
+        res.json({messagee: error.messagee})
+    }
+    
+}
+
 // get pake id
 export const getByIDfilm = async (req, res) => {
     try{
@@ -24,19 +37,7 @@ export const getByIDfilm = async (req, res) => {
     
 }
 
-// get Top film
 
-export const getTopFilm = async (req, res) => {
-    try{
-        const filmtop = await Film.find()
-        .sort({rating : -1})
-        .populate("id_kategori", "nama_kategori")
-        res.json(filmtop)
-    }catch (error) {
-        res.json({messagee: error.messagee})
-    }
-    
-}
 
 // tambah Film
 export const addFilm = async (req, res) => {

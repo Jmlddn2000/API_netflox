@@ -10,7 +10,8 @@ import {
     getFilmArtis,
     addFilmArtis,
     getByIDfilmArtis,
-    deletFilmArtis
+    deletFilmArtis,
+    getTopFilm,
 } from '../controllers/Film_artisController.js'
 
 import {
@@ -22,10 +23,10 @@ import {
 
 import {
     getFilm, 
-    getTopFilm,
     addFilm, 
     getByIDfilm,
     deletFilm, 
+    getFilmTop
 } from '../controllers/FilmController.js'
 
 const router = express.Router();
@@ -42,6 +43,8 @@ router.get('/filmArtis', getFilmArtis)
 router.post('/filmArtis', addFilmArtis)
 router.get('/filmArtis/:id_film_artis', getByIDfilmArtis)
 router.delete('/filmArtis/:id_film_artis', deletFilmArtis)
+router.get('/filmArtisTop', getTopFilm)
+
 
 // Artis
 router.get('/Artis', getArtis)
@@ -54,7 +57,8 @@ router.get('/Film', getFilm)
 router.post('/Film', addFilm)
 router.get('/Film/:id_film', getByIDfilm)
 router.delete('/Film/:id_film', deletFilm)
-router.get('/Filmtop', getTopFilm)
+router.get('/filmtop', getFilmTop)
+
 
 
 

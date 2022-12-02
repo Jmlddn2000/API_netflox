@@ -14,6 +14,21 @@ export const getFilmArtis = async (req, res) => {
     
 }
 
+// get Top film
+
+export const getTopFilm = async (req, res) => {
+    try{
+        const filmtop = await Film.find()
+        // .sort({rating : -1})
+        .populate("id_film")
+        .populate("id_artis",  "gambar" )
+        res.json(filmtop)
+    }catch (error) {
+        res.json({messagee: error.messagee})
+    }
+    
+}
+
 // get pake id
 export const getByIDfilmArtis = async (req, res) => {
     try{

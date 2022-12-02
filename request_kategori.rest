@@ -1,13 +1,13 @@
 # kategori
 
-GET http://localhost:3000/kategori
+GET http://localhost:4000/kategori
 
 ###
-GET http://localhost:3000/kategori/6381c563d0893a41a7f6751f
+GET http://localhost:4000/kategori/6381c563d0893a41a7f6751f
 
 
 ###
-POST http://localhost:3000/kategori
+POST http://localhost:4000/kategori
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/kategori/637222de356396bb553b67ef
+PATCH http://localhost:4000/kategori/637222de356396bb553b67ef
 Content-Type: application/json
 
 {
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:3000/kategori/6378996e50523fe95a244071
+DELETE  http://localhost:4000/kategori/6378996e50523fe95a244071

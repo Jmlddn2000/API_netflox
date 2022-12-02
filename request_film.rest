@@ -5,7 +5,7 @@ GET http://localhost:3000/Film
 
 ### Top Film by rating
 
-GET http://localhost:3000/FilmTopfilm
+GET http://localhost:3000/FilmTop
 
 
 ###

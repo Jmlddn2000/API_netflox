@@ -43,7 +43,7 @@ router.get('/filmArtis', getFilmArtis)
 router.post('/filmArtis', addFilmArtis)
 router.get('/filmArtis/:id_film_artis', getByIDfilmArtis)
 router.delete('/filmArtis/:id_film_artis', deletFilmArtis)
-router.get('/filmArtisTop', getTopFilm)
+router.get('/filmArtistop', getTopFilm)
 
 
 // Artis

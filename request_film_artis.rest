@@ -6,7 +6,7 @@ GET http://localhost:4000/filmArtis
 
 ### Top Film by rating
 
-GET http://localhost:4000/filmArtisTop
+GET http://localhost:4000/filmArtistop
 
 ###
 POST http://localhost:4000/filmArtis
@@ -23,4 +23,4 @@ Content-Type: application/json
 GET http://localhost:4000/filmArtis/6378998650523fe95a244074
 
 ###
-DELETE  http://localhost:4000/filmArtis/6389a19fb70cbb730e92ce28
+DELETE  http://localhost:4000/filmArtis/638a1d5fad56ef69474a68eb

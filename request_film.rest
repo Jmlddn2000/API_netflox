@@ -5,7 +5,7 @@ GET http://localhost:4000/Film
 
 ### Top Film by rating
 
-GET http://localhost:4000/Filmtop
+GET http://localhost:4000/filmtop
 
 
 ###
@@ -34,4 +34,4 @@ GET http://localhost:4000/Film/6381c59dd0893a41a7f67526
 
 ###
 
-DELETE  http://localhost:4000/Film/6389998dd263774d2e497f7f
+DELETE  http://localhost:4000/Film/638ade552bab8c728c33ca0e
